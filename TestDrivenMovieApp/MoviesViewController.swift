@@ -24,6 +24,10 @@ class MoviesViewController: UIViewController {
         tableView.dataSource = moviesTableViewPresenter
 
 
+        APIClient.getMovies { (movies) -> () in
+            self.moviesTableViewPresenter.movies = movies
+            self.tableView.reloadData()
+        }
     }
 
     override func viewWillAppear(animated: Bool) {

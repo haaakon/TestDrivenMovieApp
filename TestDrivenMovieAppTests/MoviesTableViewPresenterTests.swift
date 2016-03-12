@@ -45,7 +45,6 @@ class MoviesTableViewPresenterTests: BaseTestCase {
 
         XCTAssertEqual(moviesTableViewPresenter.tableView(UITableView(), numberOfRowsInSection: 0), 2)
 
-
     }
 
 }

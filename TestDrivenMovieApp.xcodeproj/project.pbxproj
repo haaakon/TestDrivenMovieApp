@@ -32,6 +32,10 @@
 		ECD162011C94C50200CDEDAC /* MoviesTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161FF1C94C50200CDEDAC /* MoviesTableViewPresenter.swift */; };
 		ECD162031C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD162021C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift */; };
 		ECD162051C94C65C00CDEDAC /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD162041C94C65C00CDEDAC /* BaseTestCase.swift */; };
+		ECD162071C94C8DF00CDEDAC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD162061C94C8DF00CDEDAC /* APIClient.swift */; };
+		ECD162081C94C8DF00CDEDAC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD162061C94C8DF00CDEDAC /* APIClient.swift */; };
+		ECD162091C94CA8900CDEDAC /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161F11C94B75000CDEDAC /* Movie.json */; };
+		ECD1620A1C94CA8900CDEDAC /* TwoMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161FD1C94C33D00CDEDAC /* TwoMovies.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,7 @@
 		ECD161FF1C94C50200CDEDAC /* MoviesTableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewPresenter.swift; sourceTree = "<group>"; };
 		ECD162021C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewPresenterTests.swift; sourceTree = "<group>"; };
 		ECD162041C94C65C00CDEDAC /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		ECD162061C94C8DF00CDEDAC /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,7 @@
 				ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */,
 				ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */,
 				ECD161C31C94ABE400CDEDAC /* MoviesViewController.swift */,
+				ECD162061C94C8DF00CDEDAC /* APIClient.swift */,
 				ECD161FF1C94C50200CDEDAC /* MoviesTableViewPresenter.swift */,
 				ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */,
 				ECD161C71C94ABE400CDEDAC /* Main.storyboard */,
@@ -227,7 +233,9 @@
 			files = (
 				ECD161CE1C94ABE400CDEDAC /* LaunchScreen.storyboard in Resources */,
 				ECD161CB1C94ABE400CDEDAC /* Assets.xcassets in Resources */,
+				ECD162091C94CA8900CDEDAC /* Movie.json in Resources */,
 				ECD161C91C94ABE400CDEDAC /* Main.storyboard in Resources */,
+				ECD1620A1C94CA8900CDEDAC /* TwoMovies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +263,7 @@
 				ECD161F51C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
 				ECD161E61C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
 				ECD162001C94C50200CDEDAC /* MoviesTableViewPresenter.swift in Sources */,
+				ECD162071C94C8DF00CDEDAC /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +280,7 @@
 				ECD161D91C94ABE400CDEDAC /* MovieTests.swift in Sources */,
 				ECD161F61C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
 				ECD161FC1C94C0C000CDEDAC /* XCTestCase+Convenience.swift in Sources */,
+				ECD162081C94C8DF00CDEDAC /* APIClient.swift in Sources */,
 				ECD161E71C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
 				ECD162031C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift in Sources */,
 				ECD162011C94C50200CDEDAC /* MoviesTableViewPresenter.swift in Sources */,

@@ -31,7 +31,6 @@ class MovieTests: BaseTestCase {
     func testCreate2Movies() {
 
         let jsonAttributes = XCTestCase.jsonAttributes(fromFileNamed: "TwoMovies")
-
         let movies = Movie.movies(fromAttributes: jsonAttributes, inMangagedObjectContext: CoreDataManager.moc())
         XCTAssertEqual(movies.count, 2)
 

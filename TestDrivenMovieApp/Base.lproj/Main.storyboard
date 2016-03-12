@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--Movies View Controller-->
         <scene sceneID="ppI-eM-yql">
             <objects>
-                <viewController id="1Qi-Zh-KWE" sceneMemberID="viewController">
+                <viewController id="1Qi-Zh-KWE" customClass="MoviesViewController" customModule="TestDrivenMovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="peB-HO-Bgb"/>
                         <viewControllerLayoutGuide type="bottom" id="cq7-E5-zRG"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uah-gy-bGz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uah-gy-bGz">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uah-gy-bGz" id="0xk-nZ-U2G">
@@ -57,10 +57,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ArE-S1-MZL"/>
+                    <connections>
+                        <outlet property="tableView" destination="tBl-j1-KYe" id="q3P-Bb-V8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcH-tf-6U7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="-630"/>
+            <point key="canvasLocation" x="748" y="-630"/>
         </scene>
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">

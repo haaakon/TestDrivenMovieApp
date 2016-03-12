@@ -10,7 +10,9 @@ import UIKit
 
 class MoviesTableViewPresenter: NSObject, UITableViewDataSource {
 
-    let movies = Movie.allMovies(CoreDataManager.moc())
+    var movies = Movie.allMovies(CoreDataManager.moc())
+        
+
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
@@ -21,6 +23,8 @@ class MoviesTableViewPresenter: NSObject, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+
+        cell.textLabel?.text = movies[indexPath.row].name
 
         return cell
     }
