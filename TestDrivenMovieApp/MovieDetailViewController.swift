@@ -10,6 +10,22 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
 
+
+    @IBOutlet weak var tableView : UITableView!
+
+    var movieID : NSNumber!
+
+    var movieDetailTableViewPresenter : MovieDetailTableViewPresenter!
+
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+
+        movieDetailTableViewPresenter = MovieDetailTableViewPresenter(movieID: movieID)
+        tableView.dataSource = movieDetailTableViewPresenter
+
+    }
+
     
 
 }

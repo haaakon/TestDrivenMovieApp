@@ -36,6 +36,9 @@
 		ECD162081C94C8DF00CDEDAC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD162061C94C8DF00CDEDAC /* APIClient.swift */; };
 		ECD162091C94CA8900CDEDAC /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161F11C94B75000CDEDAC /* Movie.json */; };
 		ECD1620A1C94CA8900CDEDAC /* TwoMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161FD1C94C33D00CDEDAC /* TwoMovies.json */; };
+		ECD1620C1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1620B1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift */; };
+		ECD1620D1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1620B1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift */; };
+		ECD1620F1C94D42A00CDEDAC /* MovieDetailTableViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1620E1C94D42A00CDEDAC /* MovieDetailTableViewPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,8 @@
 		ECD162021C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewPresenterTests.swift; sourceTree = "<group>"; };
 		ECD162041C94C65C00CDEDAC /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		ECD162061C94C8DF00CDEDAC /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ECD1620B1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDetailTableViewPresenter.swift; path = TestDrivenMovieApp/MovieDetailTableViewPresenter.swift; sourceTree = SOURCE_ROOT; };
+		ECD1620E1C94D42A00CDEDAC /* MovieDetailTableViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailTableViewPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 				ECD162061C94C8DF00CDEDAC /* APIClient.swift */,
 				ECD161FF1C94C50200CDEDAC /* MoviesTableViewPresenter.swift */,
 				ECD161E51C94AEF800CDEDAC /* MovieDetailViewController.swift */,
+				ECD1620B1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift */,
 				ECD161C71C94ABE400CDEDAC /* Main.storyboard */,
 				ECD161CA1C94ABE400CDEDAC /* Assets.xcassets */,
 				ECD161CC1C94ABE400CDEDAC /* LaunchScreen.storyboard */,
@@ -135,6 +141,7 @@
 				ECD161FD1C94C33D00CDEDAC /* TwoMovies.json */,
 				ECD161D81C94ABE400CDEDAC /* MovieTests.swift */,
 				ECD162021C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift */,
+				ECD1620E1C94D42A00CDEDAC /* MovieDetailTableViewPresenterTests.swift */,
 				ECD161FB1C94C0C000CDEDAC /* XCTestCase+Convenience.swift */,
 				ECD162041C94C65C00CDEDAC /* BaseTestCase.swift */,
 				ECD161DA1C94ABE400CDEDAC /* Info.plist */,
@@ -261,6 +268,7 @@
 				ECD161BF1C94ABE400CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161C41C94ABE400CDEDAC /* MoviesViewController.swift in Sources */,
 				ECD161F51C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
+				ECD1620C1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift in Sources */,
 				ECD161E61C94AEF800CDEDAC /* MovieDetailViewController.swift in Sources */,
 				ECD162001C94C50200CDEDAC /* MoviesTableViewPresenter.swift in Sources */,
 				ECD162071C94C8DF00CDEDAC /* APIClient.swift in Sources */,
@@ -271,11 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD1620D1C94D04800CDEDAC /* MovieDetailTableViewPresenter.swift in Sources */,
 				ECD161F71C94BC6300CDEDAC /* TestDrivenMovieApp.xcdatamodeld in Sources */,
 				ECD161E91C94AF0600CDEDAC /* MoviesViewController.swift in Sources */,
 				ECD161ED1C94B71900CDEDAC /* Movie+CoreDataProperties.swift in Sources */,
 				ECD161EF1C94B71900CDEDAC /* Movie.swift in Sources */,
 				ECD162051C94C65C00CDEDAC /* BaseTestCase.swift in Sources */,
+				ECD1620F1C94D42A00CDEDAC /* MovieDetailTableViewPresenterTests.swift in Sources */,
 				ECD161E81C94AF0600CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161D91C94ABE400CDEDAC /* MovieTests.swift in Sources */,
 				ECD161F61C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,

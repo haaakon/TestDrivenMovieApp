@@ -42,6 +42,12 @@ class MoviesViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
+        if let actualSelectedIndexPath = tableView.indexPathForSelectedRow , movieDetailViewController = segue.destinationViewController as? MovieDetailViewController {
+
+            let movie = moviesTableViewPresenter.movie(atIndexPath: actualSelectedIndexPath)
+            movieDetailViewController.movieID = movie.movieID
+
+        }
     }
 
     // MARK: - Table View

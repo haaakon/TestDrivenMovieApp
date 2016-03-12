@@ -49,9 +49,10 @@ class MovieTests: BaseTestCase {
         let fetchedMovie2 = Movie.fetchMovie(withMovieID: 34, managedObjectContext: CoreDataManager.moc())
 
         XCTAssertNotNil(fetchedMovie2)
-        XCTAssertEqual(fetchedMovie2?.name, "Lord of the Rings")
+        XCTAssertEqual(fetchedMovie2?.name, "The Lord of the Rings")
         XCTAssertEqual(fetchedMovie2?.movieID, 34)
         XCTAssertEqual(fetchedMovie2?.imdbScore, 7.8)
+
     }
 
 }
