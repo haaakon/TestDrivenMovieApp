@@ -22,11 +22,12 @@
 		ECD161ED1C94B71900CDEDAC /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161EA1C94B71900CDEDAC /* Movie+CoreDataProperties.swift */; };
 		ECD161EE1C94B71900CDEDAC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161EB1C94B71900CDEDAC /* Movie.swift */; };
 		ECD161EF1C94B71900CDEDAC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161EB1C94B71900CDEDAC /* Movie.swift */; };
-		ECD161F21C94B75000CDEDAC /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161F11C94B75000CDEDAC /* Movie.json */; };
 		ECD161F31C94B75000CDEDAC /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161F11C94B75000CDEDAC /* Movie.json */; };
 		ECD161F51C94BB1500CDEDAC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */; };
 		ECD161F61C94BB1500CDEDAC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */; };
 		ECD161F71C94BC6300CDEDAC /* TestDrivenMovieApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C01C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodeld */; };
+		ECD161FC1C94C0C000CDEDAC /* XCTestCase+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161FB1C94C0C000CDEDAC /* XCTestCase+Convenience.swift */; };
+		ECD161FE1C94C33D00CDEDAC /* TwoMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161FD1C94C33D00CDEDAC /* TwoMovies.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		ECD161EB1C94B71900CDEDAC /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		ECD161F11C94B75000CDEDAC /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
 		ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		ECD161FB1C94C0C000CDEDAC /* XCTestCase+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Convenience.swift"; sourceTree = "<group>"; };
+		ECD161FD1C94C33D00CDEDAC /* TwoMovies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwoMovies.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				ECD161F11C94B75000CDEDAC /* Movie.json */,
+				ECD161FD1C94C33D00CDEDAC /* TwoMovies.json */,
 				ECD161D81C94ABE400CDEDAC /* MovieTests.swift */,
+				ECD161FB1C94C0C000CDEDAC /* XCTestCase+Convenience.swift */,
 				ECD161DA1C94ABE400CDEDAC /* Info.plist */,
 			);
 			path = TestDrivenMovieAppTests;
@@ -212,7 +217,6 @@
 			files = (
 				ECD161CE1C94ABE400CDEDAC /* LaunchScreen.storyboard in Resources */,
 				ECD161CB1C94ABE400CDEDAC /* Assets.xcassets in Resources */,
-				ECD161F21C94B75000CDEDAC /* Movie.json in Resources */,
 				ECD161C91C94ABE400CDEDAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD161F31C94B75000CDEDAC /* Movie.json in Resources */,
+				ECD161FE1C94C33D00CDEDAC /* TwoMovies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 				ECD161E81C94AF0600CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161D91C94ABE400CDEDAC /* MovieTests.swift in Sources */,
 				ECD161F61C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
+				ECD161FC1C94C0C000CDEDAC /* XCTestCase+Convenience.swift in Sources */,
 				ECD161E71C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

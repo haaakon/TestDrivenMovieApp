@@ -15,7 +15,11 @@ class MovieTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+
+        for movie in Movie.allMovies(CoreDataManager.moc()) {
+            CoreDataManager.sharedManager.managedObjectContext.deleteObject(movie)
+        }
     }
     
     override func tearDown() {
@@ -25,21 +29,29 @@ class MovieTests: XCTestCase {
     
     func testCreateMovie() {
 
-        let path = NSBundle(forClass: MovieTests.self).pathForResource("Movie", ofType: "json")
-        let data = NSData(contentsOfFile: path!)
-        let jsonAttributes = try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as! [String : AnyObject]
-        
+        let jsonAttributes = XCTestCase.jsonAttributes(fromFileNamed: "Movie")
 
         let movie = Movie.movie(fromAttributes: jsonAttributes, inMangagedObjectContext: CoreDataManager.moc())
 
-        XCTAssertNotNil(data)
         XCTAssertNotNil(movie)
         XCTAssertEqual(movie?.name, "The Matrix")
         XCTAssertEqual(movie?.movieID, 34)
 
-
         let allMovies = Movie.allMovies(CoreDataManager.moc())
         XCTAssertEqual(allMovies.count, 1)
+
+    }
+
+    func testCreate2Movies() {
+
+        let jsonAttributes = XCTestCase.jsonAttributes(fromFileNamed: "TwoMovies")
+
+        let movies = Movie.movies(fromAttributes: jsonAttributes, inMangagedObjectContext: CoreDataManager.moc())
+        XCTAssertEqual(movies.count, 2)
+
+        let allMovies = Movie.allMovies(CoreDataManager.moc())
+
+        XCTAssertEqual(allMovies.count, 2)
 
     }
 

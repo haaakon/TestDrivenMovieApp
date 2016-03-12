@@ -19,6 +19,8 @@ class Movie: NSManagedObject {
         static let movieID = "movieID"
         static let name = "name"
 
+        static let movies = "movies"
+
     }
 
     class func movie(fromAttributes attributes: [String : AnyObject], inMangagedObjectContext managedObjectContext: NSManagedObjectContext) -> Movie? {
@@ -34,6 +36,23 @@ class Movie: NSManagedObject {
 
         return movie
 
+    }
+
+    class func movies(fromAttributes attributes: [String : AnyObject], inMangagedObjectContext managedObjectContext: NSManagedObjectContext) -> [Movie] {
+
+        guard let actualMovies = attributes[Constants.movies] as? [[String : AnyObject]] else {
+            return [Movie]()
+        }
+
+        var movies = [Movie]()
+
+        for movieAttributes in actualMovies {
+            if let movie = Movie.movie(fromAttributes: movieAttributes, inMangagedObjectContext: managedObjectContext) {
+                movies.append(movie)
+            }
+        }
+
+        return movies
     }
 
     class func allMovies(managedObjectContext : NSManagedObjectContext) -> [Movie] {
