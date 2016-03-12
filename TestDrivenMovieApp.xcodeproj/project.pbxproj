@@ -10,11 +10,14 @@
 		ECD161BF1C94ABE400CDEDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */; };
 		ECD161C21C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C01C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodeld */; };
 		ECD161C41C94ABE400CDEDAC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C31C94ABE400CDEDAC /* MasterViewController.swift */; };
-		ECD161C61C94ABE400CDEDAC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C51C94ABE400CDEDAC /* DetailViewController.swift */; };
 		ECD161C91C94ABE400CDEDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD161C71C94ABE400CDEDAC /* Main.storyboard */; };
 		ECD161CB1C94ABE400CDEDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD161CA1C94ABE400CDEDAC /* Assets.xcassets */; };
 		ECD161CE1C94ABE400CDEDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD161CC1C94ABE400CDEDAC /* LaunchScreen.storyboard */; };
 		ECD161D91C94ABE400CDEDAC /* TestDrivenMovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161D81C94ABE400CDEDAC /* TestDrivenMovieAppTests.swift */; };
+		ECD161E61C94AEF800CDEDAC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */; };
+		ECD161E71C94AEF800CDEDAC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */; };
+		ECD161E81C94AF0600CDEDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */; };
+		ECD161E91C94AF0600CDEDAC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C31C94ABE400CDEDAC /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,6 @@
 		ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD161C11C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestDrivenMovieApp.xcdatamodel; sourceTree = "<group>"; };
 		ECD161C31C94ABE400CDEDAC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		ECD161C51C94ABE400CDEDAC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ECD161C81C94ABE400CDEDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECD161CA1C94ABE400CDEDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD161CD1C94ABE400CDEDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		ECD161D41C94ABE400CDEDAC /* TestDrivenMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDrivenMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD161D81C94ABE400CDEDAC /* TestDrivenMovieAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrivenMovieAppTests.swift; sourceTree = "<group>"; };
 		ECD161DA1C94ABE400CDEDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +86,7 @@
 			children = (
 				ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */,
 				ECD161C31C94ABE400CDEDAC /* MasterViewController.swift */,
-				ECD161C51C94ABE400CDEDAC /* DetailViewController.swift */,
+				ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */,
 				ECD161C71C94ABE400CDEDAC /* Main.storyboard */,
 				ECD161CA1C94ABE400CDEDAC /* Assets.xcassets */,
 				ECD161CC1C94ABE400CDEDAC /* LaunchScreen.storyboard */,
@@ -155,7 +158,6 @@
 					};
 					ECD161D31C94ABE400CDEDAC = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = ECD161BA1C94ABE400CDEDAC;
 					};
 				};
 			};
@@ -206,7 +208,7 @@
 				ECD161C21C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodeld in Sources */,
 				ECD161BF1C94ABE400CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161C41C94ABE400CDEDAC /* MasterViewController.swift in Sources */,
-				ECD161C61C94ABE400CDEDAC /* DetailViewController.swift in Sources */,
+				ECD161E61C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD161E91C94AF0600CDEDAC /* MasterViewController.swift in Sources */,
+				ECD161E81C94AF0600CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161D91C94ABE400CDEDAC /* TestDrivenMovieAppTests.swift in Sources */,
+				ECD161E71C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,24 +359,20 @@
 		ECD161E11C94ABE400CDEDAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TestDrivenMovieAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hakonbogen.TestDrivenMovieAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestDrivenMovieApp.app/TestDrivenMovieApp";
 			};
 			name = Debug;
 		};
 		ECD161E21C94ABE400CDEDAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TestDrivenMovieAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hakonbogen.TestDrivenMovieAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestDrivenMovieApp.app/TestDrivenMovieApp";
 			};
 			name = Release;
 		};

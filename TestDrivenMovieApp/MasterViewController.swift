@@ -114,6 +114,7 @@ class MasterViewController: UIViewController {
 //        
 //        return _fetchedResultsController!
 //    }    
+
 //    var _fetchedResultsController: NSFetchedResultsController? = nil
 //
 //    func controllerWillChangeContent(controller: NSFetchedResultsController) {
