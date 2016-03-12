@@ -1,9 +1,11 @@
 {
     "movies": [{
                "movieID": 33,
-               "name": "The Matrix"
+               "name": "The Matrix",
+               "imdbScore" : 8.8
                }, {
                "movieID": 34,
-               "name": "Lord Of the rings"
+               "name": "Lord of the Rings",
+               "imdbScore" : 7.8
                }]
 }

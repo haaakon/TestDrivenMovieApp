@@ -18,6 +18,7 @@ class Movie: NSManagedObject {
 
         static let movieID = "movieID"
         static let name = "name"
+        static let imdbScore = "imdbScore"
 
         static let movies = "movies"
 
@@ -33,6 +34,7 @@ class Movie: NSManagedObject {
 
         movie.movieID = actualMovieID
         movie.name = attributes["name"] as? String
+        movie.imdbScore = attributes[Constants.imdbScore] as? NSNumber
 
         return movie
 
@@ -71,6 +73,26 @@ class Movie: NSManagedObject {
         }
 
         return [Movie]()
+    }
+
+    class func fetchMovie(withMovieID movieID: NSNumber, managedObjectContext: NSManagedObjectContext) -> Movie? {
+
+        let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.predicate = NSPredicate(format: "movieID == %@", movieID)
+
+        do {
+
+            if let results = try managedObjectContext.executeFetchRequest(fetchRequest) as? [Movie] {
+                return results.first!
+            }
+
+        } catch {
+
+            return nil
+
+        }
+
+        return nil
     }
 
 }

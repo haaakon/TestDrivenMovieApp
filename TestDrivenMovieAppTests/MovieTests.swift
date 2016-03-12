@@ -22,6 +22,7 @@ class MovieTests: BaseTestCase {
         XCTAssertNotNil(movie)
         XCTAssertEqual(movie?.name, "The Matrix")
         XCTAssertEqual(movie?.movieID, 34)
+        XCTAssertEqual(movie?.imdbScore, 8.8)
 
         let allMovies = Movie.allMovies(CoreDataManager.moc())
         XCTAssertEqual(allMovies.count, 1)
@@ -38,6 +39,19 @@ class MovieTests: BaseTestCase {
 
         XCTAssertEqual(allMovies.count, 2)
 
+        let fetchedMovie = Movie.fetchMovie(withMovieID: 33, managedObjectContext: CoreDataManager.moc())
+
+        XCTAssertNotNil(fetchedMovie)
+        XCTAssertEqual(fetchedMovie?.name, "The Matrix")
+        XCTAssertEqual(fetchedMovie?.movieID, 33)
+        XCTAssertEqual(fetchedMovie?.imdbScore, 8.8)
+
+        let fetchedMovie2 = Movie.fetchMovie(withMovieID: 34, managedObjectContext: CoreDataManager.moc())
+
+        XCTAssertNotNil(fetchedMovie2)
+        XCTAssertEqual(fetchedMovie2?.name, "Lord of the Rings")
+        XCTAssertEqual(fetchedMovie2?.movieID, 34)
+        XCTAssertEqual(fetchedMovie2?.imdbScore, 7.8)
     }
 
 }

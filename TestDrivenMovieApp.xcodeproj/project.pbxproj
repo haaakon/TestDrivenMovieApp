@@ -14,8 +14,8 @@
 		ECD161CB1C94ABE400CDEDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD161CA1C94ABE400CDEDAC /* Assets.xcassets */; };
 		ECD161CE1C94ABE400CDEDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD161CC1C94ABE400CDEDAC /* LaunchScreen.storyboard */; };
 		ECD161D91C94ABE400CDEDAC /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161D81C94ABE400CDEDAC /* MovieTests.swift */; };
-		ECD161E61C94AEF800CDEDAC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */; };
-		ECD161E71C94AEF800CDEDAC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */; };
+		ECD161E61C94AEF800CDEDAC /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161E51C94AEF800CDEDAC /* MovieDetailViewController.swift */; };
+		ECD161E71C94AEF800CDEDAC /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161E51C94AEF800CDEDAC /* MovieDetailViewController.swift */; };
 		ECD161E81C94AF0600CDEDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */; };
 		ECD161E91C94AF0600CDEDAC /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C31C94ABE400CDEDAC /* MoviesViewController.swift */; };
 		ECD161EC1C94B71900CDEDAC /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161EA1C94B71900CDEDAC /* Movie+CoreDataProperties.swift */; };
@@ -60,7 +60,7 @@
 		ECD161D41C94ABE400CDEDAC /* TestDrivenMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDrivenMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD161D81C94ABE400CDEDAC /* MovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
 		ECD161DA1C94ABE400CDEDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ECD161E51C94AEF800CDEDAC /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		ECD161EA1C94B71900CDEDAC /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ECD161EB1C94B71900CDEDAC /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		ECD161F11C94B75000CDEDAC /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				ECD161C31C94ABE400CDEDAC /* MoviesViewController.swift */,
 				ECD162061C94C8DF00CDEDAC /* APIClient.swift */,
 				ECD161FF1C94C50200CDEDAC /* MoviesTableViewPresenter.swift */,
-				ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */,
+				ECD161E51C94AEF800CDEDAC /* MovieDetailViewController.swift */,
 				ECD161C71C94ABE400CDEDAC /* Main.storyboard */,
 				ECD161CA1C94ABE400CDEDAC /* Assets.xcassets */,
 				ECD161CC1C94ABE400CDEDAC /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 				ECD161BF1C94ABE400CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161C41C94ABE400CDEDAC /* MoviesViewController.swift in Sources */,
 				ECD161F51C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
-				ECD161E61C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
+				ECD161E61C94AEF800CDEDAC /* MovieDetailViewController.swift in Sources */,
 				ECD162001C94C50200CDEDAC /* MoviesTableViewPresenter.swift in Sources */,
 				ECD162071C94C8DF00CDEDAC /* APIClient.swift in Sources */,
 			);
@@ -281,7 +281,7 @@
 				ECD161F61C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
 				ECD161FC1C94C0C000CDEDAC /* XCTestCase+Convenience.swift in Sources */,
 				ECD162081C94C8DF00CDEDAC /* APIClient.swift in Sources */,
-				ECD161E71C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
+				ECD161E71C94AEF800CDEDAC /* MovieDetailViewController.swift in Sources */,
 				ECD162031C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift in Sources */,
 				ECD162011C94C50200CDEDAC /* MoviesTableViewPresenter.swift in Sources */,
 			);

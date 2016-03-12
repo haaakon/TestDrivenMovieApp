@@ -16,5 +16,6 @@ extension Movie {
 
     @NSManaged var name: String?
     @NSManaged var movieID: NSNumber
+    @NSManaged var imdbScore: NSNumber?
 
 }

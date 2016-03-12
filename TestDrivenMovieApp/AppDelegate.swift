@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
-        guard let _ = secondaryAsNavController.topViewController as? DetailViewController else { return false }
+        guard let _ = secondaryAsNavController.topViewController as? MovieDetailViewController else { return false }
         return true
     }
     

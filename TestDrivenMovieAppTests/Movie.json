@@ -1,4 +1,5 @@
 {
     "movieID": 34,
-    "name": "The Matrix"
+    "name": "The Matrix",
+    "imdbScore" : 8.8
 }

@@ -9,10 +9,7 @@
 import Foundation
 import XCTest
 
-
-
 extension XCTestCase {
-
 
     class func jsonAttributes(fromFileNamed name: String) -> [String : AnyObject]{
 

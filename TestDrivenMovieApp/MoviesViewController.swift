@@ -13,7 +13,6 @@ class MoviesViewController: UIViewController {
 
     @IBOutlet weak var tableView : UITableView!
 
-    var detailViewController: DetailViewController? = nil
 
     let moviesTableViewPresenter = MoviesTableViewPresenter()
 
