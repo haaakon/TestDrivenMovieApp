@@ -33,11 +33,14 @@ class MovieTests: XCTestCase {
         let movie = Movie.movie(fromAttributes: jsonAttributes, inMangagedObjectContext: CoreDataManager.moc())
 
         XCTAssertNotNil(data)
-
         XCTAssertNotNil(movie)
+        XCTAssertEqual(movie?.name, "The Matrix")
+        XCTAssertEqual(movie?.movieID, 34)
 
+
+        let allMovies = Movie.allMovies(CoreDataManager.moc())
+        XCTAssertEqual(allMovies.count, 1)
 
     }
-    
 
 }

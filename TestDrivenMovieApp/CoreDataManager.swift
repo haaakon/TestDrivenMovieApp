@@ -59,7 +59,7 @@ class CoreDataManager {
     }()
 
     class func moc() -> NSManagedObjectContext {
-        return CoreDataManager().managedObjectContext
+        return CoreDataManager.sharedManager.managedObjectContext
     }
 
     // MARK: - Core Data Saving support
