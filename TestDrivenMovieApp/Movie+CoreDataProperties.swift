@@ -15,6 +15,6 @@ import CoreData
 extension Movie {
 
     @NSManaged var name: String?
-    @NSManaged var movieID: Int32
+    @NSManaged var movieID: NSNumber
 
 }

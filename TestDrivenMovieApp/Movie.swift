@@ -12,6 +12,27 @@ import CoreData
 
 class Movie: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    struct Constants {
+
+        static let movieID = "movieID"
+        static let name = "name"
+
+    }
+
+    class func movie(fromAttributes attributes: [String : AnyObject], inMangagedObjectContext managedObjectContext: NSManagedObjectContext) -> Movie? {
+
+        guard let actualMovieID = attributes[Constants.movieID] as? NSNumber else {
+            return nil
+        }
+
+        let movie = Movie(entity: NSEntityDescription.entityForName("Movie", inManagedObjectContext: managedObjectContext)!, insertIntoManagedObjectContext: managedObjectContext)
+
+        movie.movieID = actualMovieID
+        movie.name = attributes[Constants.name] as? String
+
+        return movie
+
+    }
 
 }
+

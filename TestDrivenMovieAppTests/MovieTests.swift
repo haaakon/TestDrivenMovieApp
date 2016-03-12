@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import CoreData
+
 @testable import TestDrivenMovieApp
 
 class MovieTests: XCTestCase {
@@ -22,6 +24,18 @@ class MovieTests: XCTestCase {
     }
     
     func testCreateMovie() {
+
+        let path = NSBundle(forClass: MovieTests.self).pathForResource("Movie", ofType: "json")
+        let data = NSData(contentsOfFile: path!)
+        let jsonAttributes = try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as! [String : AnyObject]
+        
+
+        let movie = Movie.movie(fromAttributes: jsonAttributes, inMangagedObjectContext: CoreDataManager.moc())
+
+        XCTAssertNotNil(data)
+
+        XCTAssertNotNil(movie)
+
 
     }
     
