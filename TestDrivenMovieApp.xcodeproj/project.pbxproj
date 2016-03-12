@@ -24,6 +24,9 @@
 		ECD161EF1C94B71900CDEDAC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161EB1C94B71900CDEDAC /* Movie.swift */; };
 		ECD161F21C94B75000CDEDAC /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161F11C94B75000CDEDAC /* Movie.json */; };
 		ECD161F31C94B75000CDEDAC /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD161F11C94B75000CDEDAC /* Movie.json */; };
+		ECD161F51C94BB1500CDEDAC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */; };
+		ECD161F61C94BB1500CDEDAC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */; };
+		ECD161F71C94BC6300CDEDAC /* TestDrivenMovieApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C01C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		ECD161EA1C94B71900CDEDAC /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ECD161EB1C94B71900CDEDAC /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		ECD161F11C94B75000CDEDAC /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
+		ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			children = (
 				ECD161F01C94B72000CDEDAC /* Models */,
 				ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */,
+				ECD161F41C94BB1500CDEDAC /* CoreDataManager.swift */,
 				ECD161C31C94ABE400CDEDAC /* MasterViewController.swift */,
 				ECD161E51C94AEF800CDEDAC /* DetailViewController.swift */,
 				ECD161C71C94ABE400CDEDAC /* Main.storyboard */,
@@ -232,6 +237,7 @@
 				ECD161EE1C94B71900CDEDAC /* Movie.swift in Sources */,
 				ECD161BF1C94ABE400CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161C41C94ABE400CDEDAC /* MasterViewController.swift in Sources */,
+				ECD161F51C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
 				ECD161E61C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,11 +246,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD161F71C94BC6300CDEDAC /* TestDrivenMovieApp.xcdatamodeld in Sources */,
 				ECD161E91C94AF0600CDEDAC /* MasterViewController.swift in Sources */,
 				ECD161ED1C94B71900CDEDAC /* Movie+CoreDataProperties.swift in Sources */,
 				ECD161EF1C94B71900CDEDAC /* Movie.swift in Sources */,
 				ECD161E81C94AF0600CDEDAC /* AppDelegate.swift in Sources */,
 				ECD161D91C94ABE400CDEDAC /* MovieTests.swift in Sources */,
+				ECD161F61C94BB1500CDEDAC /* CoreDataManager.swift in Sources */,
 				ECD161E71C94AEF800CDEDAC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
