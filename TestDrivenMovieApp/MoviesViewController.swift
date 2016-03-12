@@ -9,14 +9,21 @@
 import UIKit
 import CoreData
 
-class MasterViewController: UIViewController {
+class MoviesViewController: UIViewController {
+
+    @IBOutlet weak var tableView : UITableView!
 
     var detailViewController: DetailViewController? = nil
-    var managedObjectContext: NSManagedObjectContext? = nil
+
+    let moviesTableViewPresenter = MoviesTableViewPresenter()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.dataSource = moviesTableViewPresenter
+
+
     }
 
     override func viewWillAppear(animated: Bool) {

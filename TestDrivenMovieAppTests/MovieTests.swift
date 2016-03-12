@@ -11,21 +11,7 @@ import CoreData
 
 @testable import TestDrivenMovieApp
 
-class MovieTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-
-
-        for movie in Movie.allMovies(CoreDataManager.moc()) {
-            CoreDataManager.sharedManager.managedObjectContext.deleteObject(movie)
-        }
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+class MovieTests: BaseTestCase {
     
     func testCreateMovie() {
 
