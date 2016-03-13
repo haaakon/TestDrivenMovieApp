@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC67846A1C95B507002D9748 /* MovieV2.json in Resources */ = {isa = PBXBuildFile; fileRef = EC6784691C95B507002D9748 /* MovieV2.json */; };
 		ECD161BF1C94ABE400CDEDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */; };
 		ECD161C21C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C01C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodeld */; };
 		ECD161C41C94ABE400CDEDAC /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD161C31C94ABE400CDEDAC /* MoviesViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC6784691C95B507002D9748 /* MovieV2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieV2.json; sourceTree = "<group>"; };
 		ECD161BB1C94ABE400CDEDAC /* TestDrivenMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDrivenMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD161BE1C94ABE400CDEDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD161C11C94ABE400CDEDAC /* TestDrivenMovieApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestDrivenMovieApp.xcdatamodel; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				ECD161F11C94B75000CDEDAC /* Movie.json */,
+				EC6784691C95B507002D9748 /* MovieV2.json */,
 				ECD161FD1C94C33D00CDEDAC /* TwoMovies.json */,
 				ECD161D81C94ABE400CDEDAC /* MovieTests.swift */,
 				ECD162021C94C61D00CDEDAC /* MoviesTableViewPresenterTests.swift */,
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC67846A1C95B507002D9748 /* MovieV2.json in Resources */,
 				ECD161F31C94B75000CDEDAC /* Movie.json in Resources */,
 				ECD161FE1C94C33D00CDEDAC /* TwoMovies.json in Resources */,
 			);
@@ -469,6 +473,7 @@
 				ECD161DF1C94ABE400CDEDAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD161E01C94ABE400CDEDAC /* Build configuration list for PBXNativeTarget "TestDrivenMovieAppTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +482,7 @@
 				ECD161E21C94ABE400CDEDAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
