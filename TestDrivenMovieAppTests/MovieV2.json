@@ -1,0 +1,13 @@
+{
+    "movieID": 34,
+    "name": "The Matrix",
+    "imdbScore": 8.8,
+    "actors": [344, 2242, 4343],
+    "genres": [49939, 42312, 234, 1, 23],
+    "hasOscars": null,
+    "director": "",
+    "boxOffice": "$493.199.342",
+    "trailerURL": "http://movietrailers.net/342992359235%20%20-thematrix.php",
+    "previewURL": "",
+    "country" : "USA"
+}
