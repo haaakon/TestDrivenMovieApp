@@ -11,24 +11,27 @@ import XCTest
 class MovieDetailTableViewPresenterTests: BaseTestCase {
 
 
-    func testShowData() {
+    func testShowDataForMovie() {
 
-        let jsonAttributes = XCTestCase.jsonAttributes(fromFileNamed: "TwoMovies")
+        let jsonAttributes = BaseTestCase.jsonAttributes(fromFileNamed: "TwoMovies")
+
         Movie.movies(fromAttributes: jsonAttributes, inMangagedObjectContext: CoreDataManager.moc())
-        let movieDetailTableViewPresenter = MovieDetailTableViewPresenter(movieID: 33)
 
         let movie = Movie.fetchMovie(withMovieID: 33, managedObjectContext: CoreDataManager.moc())
-        XCTAssertNotNil(movie)
+
+        let movieDetailTableViewPresenter = MovieDetailTableViewPresenter(movieID: movie!.movieID)
 
         let titleAndText = movieDetailTableViewPresenter.titleAndTextForIndexPath(NSIndexPath(forRow: 0, inSection: 0))
 
-        XCTAssertNotNil(titleAndText)
+        XCTAssertEqual(titleAndText?.1, movie?.name)
 
-        XCTAssertEqual(movie?.name, titleAndText?.1)
+        let titleAndText2 = movieDetailTableViewPresenter.titleAndTextForIndexPath(NSIndexPath(forRow: 1, inSection: 0))
 
-        let IMDBScoreAndTitle = movieDetailTableViewPresenter.titleAndTextForIndexPath(NSIndexPath(forRow: 1, inSection: 0))
+        XCTAssertEqual(titleAndText2?.1, "8.8")
 
-        XCTAssertEqual(movie?.imdbScore?.stringValue, IMDBScoreAndTitle?.1)
+
+
+
     }
 
 }
