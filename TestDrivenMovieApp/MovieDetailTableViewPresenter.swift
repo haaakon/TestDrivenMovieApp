@@ -66,7 +66,8 @@ class MovieDetailTableViewPresenter: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
 
         if let titleAndText = titleAndTextForIndexPath(indexPath) {
-            cell.textLabel?.text = titleAndText.1
+            cell.textLabel?.text = titleAndText.0
+            cell.detailTextLabel?.text = titleAndText.1
         }
 
         return cell
