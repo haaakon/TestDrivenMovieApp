@@ -3,6 +3,7 @@ Showcasing iOS test driven development
 
 This project is part of a presentation about test driven iOS devlopement. The slides from the talk are below:
 
+
 #Test driven iOS development
 
 #### Håkon Bogen iOS developer at Beining & Bogen
@@ -39,10 +40,13 @@ This project is part of a presentation about test driven iOS devlopement. The sl
 
 
 ---
-# Lets look at some examples
+# Lets look at an example project
 
 https://github.com/haaakon/TestDrivenMovieApp
+https://www.livecoding.tv/haaakon/
 
+---
+# JSON base for testing model creation
 ```Swift
 
 GET movie - Movie.json
@@ -250,4 +254,5 @@ class MoviesTableViewPresenter: NSObject, UITableViewDataSource {
 
 
 ---
+
 
